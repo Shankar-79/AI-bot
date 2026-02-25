@@ -13,7 +13,7 @@ export interface OpenAIMessage {
 export async function callOpenAI(
   messages: OpenAIMessage[]
 ): Promise<string> {
-  const response = await fetch("http://localhost:3001/api/chat", {
+  const response = await fetch("https://ai-bot-n7f5.onrender.com/api/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
