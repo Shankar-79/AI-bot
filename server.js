@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.post("/api/chat", async (req, res) => {
   try {
-    const { messages } = req.body.messages.slice(-5);;
+    const  messages  = req.body.messages.slice(-5);;
 
     const response = await fetch(
       "https://api.groq.com/openai/v1/chat/completions",
